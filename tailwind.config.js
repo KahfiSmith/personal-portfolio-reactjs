@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        customBackgroiund: "#030014",
+        customBackgroiund: "#0f172a",
+        customSoft: "#293548",
+        customVerySoft: "#2d4258",
+        customText: "#e2e8f0",
       },
       borderWidth: {
         1: "1.5px",

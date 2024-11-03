@@ -1,3 +1,9 @@
+import Header from "@/components/atoms/header";
+
 export default function Index() {
-  return <div>hello world</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
