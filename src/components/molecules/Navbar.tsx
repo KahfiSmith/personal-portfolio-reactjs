@@ -83,7 +83,6 @@ export default function Navbar({ navOpen }: NavbarProps) {
       <div
         className="active-box"
         ref={activeBox}
-        style={{ position: "absolute", transition: "all 0.3s ease" }}
       ></div>
     </nav>
   );

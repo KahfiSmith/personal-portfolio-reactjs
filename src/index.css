@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar {
-  @apply absolute top-[74px] right-4 min-w-40 p-2 bg-customSoft rounded-lg ring-inset ring-1 ring-customSoft scale-90 isolate blur-sm opacity-0 invisible transition-all duration-300 md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100
+  @apply absolute top-[74px] right-4 min-w-40 p-2 bg-customSoft rounded-lg ring-inset ring-1 ring-customSoft scale-90 isolate blur-sm opacity-0 invisible md:transition-all md:duration-100 md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100
 }
 
 .navbar-active {
@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-link.active {
-  @apply text-[#74c2e9] duration-500
+  @apply text-customTextv2 duration-500
 } 
 
 .navbar .active-box {
