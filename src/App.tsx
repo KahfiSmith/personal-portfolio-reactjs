@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "@/pages/NotFound";
-import Index from "@/pages";
+import Home from "@/pages/Home";
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* Index */}
-        <Route path="/" element={<Index />} />
+        <Route path="/" element={<Home />} />
 
         {/* Error Page */}
         <Route path="*" element={<NotFound />} />
