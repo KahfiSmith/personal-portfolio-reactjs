@@ -9,7 +9,8 @@ const config = {
     extend: {
       fontFamily: {
         ...defaultTheme.fontFamily, 
-        manrope: ["Manrope", "sans-serif", "system-ui"],
+        geist: ["Geist", "sans-serif", "system-ui"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         customBackground: "#0f172a",

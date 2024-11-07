@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar {
-  @apply absolute top-[74px] right-4 py-1 px-2 md:px-4 min-w-40 ring-inset scale-90 isolate blur-sm opacity-0 invisible md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 font-bold md:rounded-full ring-1 ring-customSoft rounded-lg;
+  @apply absolute top-[70px] right-4 py-1 px-2 md:px-4 min-w-40 ring-inset scale-90 isolate blur-sm opacity-0 invisible md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 font-bold md:rounded-full ring-1 ring-customSoft rounded-lg;
 }
 
 .navbar-active {
