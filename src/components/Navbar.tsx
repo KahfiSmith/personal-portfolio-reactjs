@@ -8,23 +8,18 @@ export default function Navbar() {
 
   const navItems: NavItemProps[] = [
     {
-      label: "Home",
-      link: "#home",
-      className: "nav-link",
-    },
-    {
       label: "About",
       link: "#about",
       className: "nav-link",
     },
     {
-      label: "Work",
-      link: "#work",
+      label: "Skills",
+      link: "#skills",
       className: "nav-link",
     },
     {
-      label: "Reviews",
-      link: "#reviews",
+      label: "Projects",
+      link: "#projects",
       className: "nav-link",
     },
     {

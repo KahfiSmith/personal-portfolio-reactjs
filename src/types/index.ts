@@ -1,4 +1,4 @@
-import { RefObject } from "react";
+import { ReactNode, RefObject } from "react";
 
 export interface NavItemProps {
   label: string;
@@ -9,4 +9,9 @@ export interface NavItemProps {
 
 export interface NavbarProps {
     navOpen: boolean
+}
+
+export interface ExperienceItem {
+  title: string;
+  content: ReactNode;
 }

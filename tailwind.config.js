@@ -10,14 +10,15 @@ const config = {
       fontFamily: {
         ...defaultTheme.fontFamily, 
         geist: ["Geist", "sans-serif", "system-ui"],
-        inter: ["Inter", "sans-serif"],
+        lora: ["Lora", "sans-serif"],
       },
       colors: {
         customBackground: "#0f172a",
         customSoft: "#30384f",
         customVerySoft: "#334155",
         customText: "#cbd5e1",
-        customTextv2: "#F7F8FC",
+        customTextV2: "#F7F8FC",
+        customTextV3: "#7dd3fc",
       },
       animation: {
         aurora: "aurora 60s linear infinite",
