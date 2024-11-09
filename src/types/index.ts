@@ -8,10 +8,12 @@ export interface NavItemProps {
 }
 
 export interface NavbarProps {
-    navOpen: boolean
+  navOpen: boolean;
 }
 
-export interface ExperienceItem {
+export interface ExperienceItemProps {
   title: string;
+  date: string;
+  company: string;
   content: ReactNode;
 }

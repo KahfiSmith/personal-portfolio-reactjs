@@ -9,7 +9,7 @@ export default function Motion({ children }: { children: React.ReactNode }) {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className=" flex flex-col gap-4 items-center justify-center px-4"
+      className="relative flex flex-col gap-4 items-center justify-center px-4"
     >
       {children}
     </motion.div>
