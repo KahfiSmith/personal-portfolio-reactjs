@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar-active {
-  @apply opacity-100 scale-100 blur-0 visible bg-customSoft/40 md:bg-transparent ;
+  @apply opacity-100 scale-100 blur-0 visible bg-customSoft md:bg-transparent ;
 }
 
 .nav-link {

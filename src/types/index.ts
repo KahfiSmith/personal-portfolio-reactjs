@@ -17,3 +17,9 @@ export interface ExperienceItemProps {
   company: string;
   content: ReactNode;
 }
+
+export interface SkillItemProps {
+  imgSrc: string;
+  label: string;
+  desc: string;
+}

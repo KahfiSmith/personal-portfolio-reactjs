@@ -3,10 +3,10 @@ import { dataExperience } from "@/lib/utils/dataExprerience";
 
 export default function About() {
   return (
-    <section className="w-full mb-96 flex justify-center pt-20" id="about">
+    <section className="w-full flex justify-center pt-20" id="about">
       <div className="max-w-screen-lg md:flex md:flex-col items-center justify-between px-8">
         <div className="flex flex-col justify-start text-[20px] md:text-2xl lg:text-3xl font-medium mb-6">
-          <span className="font-reguler md:mb-5 mb-1 text-customText">
+          <span className="md:mb-5 mb-1 text-customText">
             I'm a <span className="font-semibold">Frontend Web Developer</span>{" "}
             and <span className="font-semibold">UI/UX Designer</span>
           </span>
