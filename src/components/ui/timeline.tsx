@@ -31,7 +31,7 @@ export const Timeline = ({ data }: { data: ExperienceItemProps[] }) => {
         </p>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-48">
+      <div ref={ref} className="relative max-w-7xl mx-auto pb-28">
         {data.map((item, index) => (
           <div
             key={index}

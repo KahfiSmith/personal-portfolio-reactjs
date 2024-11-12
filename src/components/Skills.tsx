@@ -4,10 +4,10 @@ import { dataSkills } from "@/lib/utils/dataSkills";
 export default function Skills() {
   return (
     <section
-      className="w-full flex justify-center pt-20 min-h-screen"
+      className="w-full flex justify-center min-h-screen items-center"
       id="skills"
     >
-      <div className="w-full md:flex md:flex-col items-center justify-between px-16 lg:px-40 max-w-7xl">
+      <div className="w-full md:flex md:flex-col items-center justify-between px-16 max-w-7xl">
         <div className="flex flex-col justify-start font-medium mb-6 w-full bg-customVerySoft/10 px-6 py-14 rounded-2xl">
           <span className="md:mb-14 mb-6 text-customText font-semibold text-center text-[20px] md:text-2xl lg:text-3xl">
             Programming Language & Tools
