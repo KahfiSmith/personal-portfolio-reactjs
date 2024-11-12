@@ -20,8 +20,8 @@ export default function Hero() {
             </h1>
             <div className="flex flex-col text-sm md:text-base text-customText text-center tracking-wide px-8 md:mb-6 mb-4 font-lora">
               <span className="mb-2 md:mb-1">
-                An information engineering student with experience as a <span className="font-bold text-customTextV2">Frontend
-                Web Developer</span> and <span className="font-bold text-customTextV2">UI/UX Designer</span>.
+                An information engineering student with experience as a <span className="font-bold text-customTextV2/90">Frontend
+                Web Developer</span> and <span className="font-bold text-customTextV2/90">UI/UX Designer</span>.
               </span>
               <span>
                 Skilled in creating and optimizing visual elements and intuitive

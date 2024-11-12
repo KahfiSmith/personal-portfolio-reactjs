@@ -23,3 +23,12 @@ export interface SkillItemProps {
   label: string;
   desc: string;
 }
+
+export interface ProjectsItemProps {
+  imgSrc: string;
+  title: string;
+  desc?: string;
+  tags?: string[];
+  link?: string;
+  type?: string;
+}
