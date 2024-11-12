@@ -11,7 +11,7 @@ export default function Projects() {
       className="w-full flex justify-center pt-20 min-h-screen"
       id="projects"
     >
-      <div className="w-full md:flex md:flex-col items-center justify-between px-16 lg:px-40">
+      <div className="w-full md:flex md:flex-col items-center justify-between px-16 max-w-7xl">
         <div className="flex flex-col justify-start font-medium mb-6">
           <span className="md:mb-14 mb-6 text-customText font-semibold text-center text-[20px] md:text-2xl lg:text-3xl">
             Showcase of Creativity
