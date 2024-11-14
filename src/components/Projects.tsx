@@ -1,5 +1,5 @@
-import ProjectCardNew from "@/components/ProjectCardNew";
-import ProjectsCard from "@/components/ProjectsCard";
+import ProjectCardDesign from "@/components/ProjectCardDesign";
+import ProjectsCardWebsite from "@/components/ProjectsCardWebsite";
 import { dataProjects } from "@/lib/utils/dataProjects";
 
 const websiteProject = dataProjects.filter((item) => item.type === "website");
@@ -11,7 +11,7 @@ export default function Projects() {
       className="w-full flex justify-center pt-20 min-h-screen"
       id="projects"
     >
-      <div className="w-full md:flex md:flex-col items-center justify-between px-16 max-w-7xl">
+      <div className="w-full md:flex md:flex-col items-center justify-between px-4 max-w-7xl">
         <div className="flex flex-col justify-start font-medium mb-6">
           <span className="md:mb-14 mb-6 text-customText font-semibold text-center text-[20px] md:text-2xl lg:text-3xl">
             Showcase of Creativity
@@ -24,9 +24,9 @@ export default function Projects() {
               Modern and responsive web with a focus on intuitive UI/UX design
               and efficient backend solutions.
             </span>
-            <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(450px,1fr))]">
+            <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
               {websiteProject.map((item, index) => (
-                <ProjectsCard
+                <ProjectsCardWebsite
                   key={index}
                   imgSrc={item.imgSrc}
                   title={item.title}
@@ -37,7 +37,7 @@ export default function Projects() {
               ))}
             </div>
           </div>
-          <div className="flex flex-col mb-2">
+          <div className="flex flex-col mb-20">
             <span className="mb-1 text-customText font-semibold text-[20px] md:text-xl lg:text-2xl">
               Creative Design Portfolio
             </span>
@@ -45,13 +45,14 @@ export default function Projects() {
               Several innovative designs, ranging from mobile and website UI/UX,
               to anime GFX work.
             </span>
-            <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(450px,1fr))]">
+            <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
               {designProject.map((item, index) => (
-                <ProjectCardNew
+                <ProjectCardDesign
                   key={index}
                   imgSrc={item.imgSrc}
                   title={item.title}
                   desc={item.desc}
+                  tags={item.tags}
                 />
               ))}
             </div>
