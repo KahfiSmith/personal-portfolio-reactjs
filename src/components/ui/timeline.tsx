@@ -24,14 +24,14 @@ export const Timeline = ({ data }: { data: ExperienceItemProps[] }) => {
 
   return (
     <div className="w-full" ref={containerRef}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h2 className="md:text-2xl mb-2 w-1/2 font-medium">Experience</h2>
         <p className="text-sm md:text-base max-w-sm">
-          this is my experience from 2023 to 2024.
+          This is my experience from 2023 to 2024.
         </p>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-28">
+      <div ref={ref} className="relative max-w-5xl mx-auto pb-28">
         {data.map((item, index) => (
           <div
             key={index}
