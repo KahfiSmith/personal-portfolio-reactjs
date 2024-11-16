@@ -46,17 +46,17 @@ export default function Navbar() {
             </li>
             <li className="h-4 w-[1px] bg-customText/40"></li>
             <li
-            className="hover:text-customText transition-colors cursor-pointer"
-            onClick={() => navigate("/hobby")}
-          >
-            Hobby
-          </li>
-          <li
-            className="hover:text-customText transition-colors cursor-pointer"
-            onClick={() => navigate("/blog")}
-          >
-            Blog
-          </li>
+              className="hover:text-customText transition-colors cursor-pointer"
+              onClick={() => navigate("/hobby")}
+            >
+              Hobby
+            </li>
+            <li
+              className="hover:text-customText transition-colors cursor-pointer"
+              onClick={() => navigate("/blog")}
+            >
+              Blog
+            </li>
           </ul>
         </div>
         <ul
@@ -72,6 +72,21 @@ export default function Navbar() {
           </li>
           <li className="hover:text-customText transition-colors">
             <a href="#projects">Projects</a>
+          </li>
+          <li className="flex justify-center items-center">
+            <hr className="w-8 border-t-1 border-customText/40 my-0" />
+          </li>
+          <li
+            className="hover:text-customText transition-colors cursor-pointer"
+            onClick={() => navigate("/hobby")}
+          >
+            Hobby
+          </li>
+          <li
+            className="hover:text-customText transition-colors cursor-pointer"
+            onClick={() => navigate("/blog")}
+          >
+            Blog
           </li>
         </ul>
       </nav>
