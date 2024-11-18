@@ -1,8 +1,9 @@
-import { useOutsideClick } from "@/components/ui/UseOutsideClick";
+
+import { useOutsideClick } from "@/hooks";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useId, useRef, useState } from "react";
 
-export function AbboutCard() {
+export function AboutCard() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );

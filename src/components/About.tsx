@@ -1,4 +1,4 @@
-import { AbboutCard } from "@/components/AboutCard";
+import { AboutCard } from "@/components/AboutCard";
 import { Timeline } from "@/components/ui/timeline";
 import { dataExperience } from "@/lib/utils/dataExprerience";
 
@@ -9,12 +9,12 @@ export default function About() {
       id="about"
     >
       <div className="w-full md:flex md:flex-col items-center px-4 max-w-5xl">
-        <div className="flex flex-col justify-start text-[20px] md:text-2xl lg:text-3xl font-medium mb-6">
+        <div className="flex flex-col justify-start text-xl md:text-2xl lg:text-3xl font-medium mb-6">
           <span className="md:mb-5 mb-1 text-customText">
             I'm a Frontend Web Developer and UI/UX Designer
           </span>
         </div>
-        <AbboutCard/>
+        <AboutCard/>
         <Timeline data={dataExperience} />
       </div>
     </section>
