@@ -1,23 +1,37 @@
 import { ProjectsItemProps } from "@/types";
 import { ArrowUpRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function ProjectsCardWebsite({
   imgSrc,
   title,
   desc,
   tags,
-  link,
+  route,
 }: ProjectsItemProps) {
-  const truncatedDesc = desc?.length && desc.length > 75 ? `${desc.slice(0, 75)}...` : desc ?? "No description available";
+  const navigate = useNavigate();
+
+  const truncatedDesc =
+    desc?.length && desc.length > 75
+      ? `${desc.slice(0, 75)}...`
+      : desc ?? "No description available";
+
+  const handleClick = () => {
+    if (route) {
+      navigate(route);
+    }
+  };
 
   return (
-    <div className="ring-1 ring-customVerySoft rounded-xl hover:shadow-md hover:shadow-blue-800/50 transition-all duration-500 font-normal group cursor-pointer">
-      <figure className="overflow-hidden">
+    <div
+      className="ring-1 ring-customVerySoft rounded-xl hover:shadow-md hover:shadow-slate-600/50 transition-all duration-500 font-normal group cursor-pointer"
+      onClick={handleClick}
+    >
+      <figure className="overflow-hidden rounded-t-xl">
         <img
           src={imgSrc}
           alt={title}
-          loading="lazy"
-          className="rounded-t-xl transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:rotate-2 max-h-[250px] min-h-[230px]"
+          className="rounded-t-xl transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:rotate-2 w-full aspect-[16/9] object-cover"
         />
         <figcaption className="p-4">
           <h3 className="text-xl font-medium mb-2 text-customTextV3">
@@ -35,12 +49,7 @@ export default function ProjectsCardWebsite({
                 </span>
               ))}
             </div>
-            <a
-              href={link}
-              className="transition-transform duration-300 ease-in-out transform group-hover:rotate-45"
-            >
-              <ArrowUpRight />
-            </a>
+            <ArrowUpRight className="transition-transform duration-300 ease-in-out transform group-hover:rotate-45" />
           </div>
         </figcaption>
       </figure>

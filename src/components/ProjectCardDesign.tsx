@@ -1,13 +1,30 @@
 import { ProjectsItemProps } from "@/types";
 import { ArrowUpRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function ProjectCardDesign({
   title,
   desc,
   imgSrc,
+  route,
 }: ProjectsItemProps) {
+  const navigate = useNavigate();
+  const truncatedDesc =
+    desc?.length && desc.length > 60
+      ? `${desc.slice(0, 60)}...`
+      : desc ?? "No description available";
+
+  const handleClick = () => {
+    if (route) {
+      navigate(route);
+    }
+  };
+
   return (
-    <div className="relative rounded-lg mx-auto shadow-md overflow-hidden group cursor-pointer max-h-[250px] min-h-[230px]">
+    <div
+      className="relative rounded-lg mx-auto shadow-md overflow-hidden group cursor-pointer max-h-[250px]"
+      onClick={handleClick}
+    >
       <img
         src={imgSrc}
         alt={title}
@@ -15,8 +32,8 @@ export default function ProjectCardDesign({
       />
       <div className="absolute inset-0 bg-black/50 hover:bg-black/20 flex flex-col justify-between">
         <div className="bg-transparent backdrop-blur-sm p-3 rounded-t-lg group-hover:opacity-0 transition-opacity duration-300">
-          <h2 className="text-lg font-semibold">{title}</h2>
-          <p className="text-sm max-w-80">{desc}</p>
+          <h3 className="text-lg font-semibold">{title}</h3>
+          <p className="text-sm max-w-80">{truncatedDesc}</p>
         </div>
         <button className="absolute top-4 right-4 bg-white/10 p-2 rounded-full text-customText/80 group-hover:opacity-0 transition-opacity duration-300">
           <ArrowUpRight size={18} />

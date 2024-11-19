@@ -13,7 +13,6 @@ function App() {
   return (
     <Router>
       <Routes>
-
         {/* Index */}
         <Route path="/" element={<Home />} />
         <Route path="/reviewnime" element={<ReviewNime />} />
@@ -23,7 +22,7 @@ function App() {
         <Route path="/medmart" element={<Medmart />} />
         <Route path="/eduverse" element={<EduVerse />} />
         <Route path="/hobby" element={<Hobby />} />
-        
+
         {/* Error Page */}
         <Route path="*" element={<NotFound />} />
       </Routes>

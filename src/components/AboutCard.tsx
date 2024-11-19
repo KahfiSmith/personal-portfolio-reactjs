@@ -120,9 +120,9 @@ export function AboutCard() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center bg-customSoft/30 hover:bg-customSoft/60 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col md:flex-row justify-between items-center bg-customSoft/40 hover:bg-customSoft/60 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row">
+            <div className="flex gap-4 flex-col md:flex-row items-center">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <img
                   width={100}

@@ -26,7 +26,7 @@ export const dataProjects: ProjectsItemProps[] = [
     route: "/depomayarjaya",
   },
   {
-    imgSrc: "/images/relive1.png",
+    imgSrc: "/images/relive.png",
     title: "ReLive",
     desc: "ReLive is an online consultation platform designed to provide easy and fast access to users who need psychological help.",
     tags: ["React.js", "Express.js", "Tailwind CSS"],
@@ -41,7 +41,7 @@ export const dataProjects: ProjectsItemProps[] = [
     route: "/medmart",
   },
   {
-    imgSrc: "/images/eduverse.png",
+    imgSrc: "/images/eduverse.svg",
     title: "EduVerse",
     desc: "EduVerse is a learning application specially designed for high school students.",
     type: "design",
