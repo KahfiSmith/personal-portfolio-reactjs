@@ -26,16 +26,3 @@ body::-webkit-scrollbar {
   box-shadow: 0 0 2 0px rgba(96, 165, 250, 0.8),
     0 0 100px rgba(96, 165, 250, 0.5);
 }
-
-/* .navbar {
-  @apply absolute top-[70px] right-4 py-1 px-2 md:px-6 min-w-40 ring-inset scale-90 isolate blur-sm opacity-0 invisible md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 font-bold md:rounded-full md:ring-2 ring-1 ring-customText/40 rounded-lg md:space-x-6;
-}
-
-.navbar-active {
-  @apply opacity-100 scale-100 blur-0 visible bg-customSoft md:bg-transparent;
-}
-
-.nav-link {
-  @apply grid items-center h-9 px-3 text-sm font-medium tracking-wide text-customText/70 hover:text-customText;
-} */
-

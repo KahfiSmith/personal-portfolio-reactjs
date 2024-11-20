@@ -29,7 +29,7 @@ export default function BackButton({
         >
           {title}
         </h2>
-        <span>{subtitle}</span>
+        <span className="font-normal text-base leading-7">{subtitle}</span>
       </div>
     </div>
   );
