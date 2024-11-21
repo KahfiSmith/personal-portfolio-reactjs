@@ -1,6 +1,6 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
@@ -43,88 +43,94 @@ export default function Navbar() {
             {isOpen ? <X /> : <Menu />}
           </button>
 
-          <AnimatePresence>
-            {isDesktop && (
-              <motion.ul
-                className="md:flex hidden md:justify-center md:items-center text-center space-y-6 md:space-y-0 font-semibold md:space-x-10 md:py-1"
-                variants={navVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                transition={{ duration: 0.3 }}
-              >
-                <li className="hover:text-customText transition-colors">
-                  <a href="#about">About</a>
-                </li>
-                <li className="hover:text-customText transition-colors">
-                  <a href="#skills">Skills</a>
-                </li>
-                <li className="hover:text-customText transition-colors">
-                  <a href="#projects">Projects</a>
-                </li>
-                <li className="h-4 w-[1px] bg-customText/40"></li>
-                <li
-                  className="hover:text-customText transition-colors cursor-pointer"
-                  onClick={() => navigate("/hobby")}
-                >
-                  Hobby
-                </li>
-                <li
-                  className="hover:text-customText transition-colors cursor-pointer"
-                  onClick={() => navigate("/blog")}
-                >
-                  Blog
-                </li>
-              </motion.ul>
-            )}
-          </AnimatePresence>
+          <ul
+            className={`md:flex hidden md:justify-center md:items-center md:mt-0 mt-4 text-center space-y-4 md:space-y-0 font-semibold md:space-x-12 h-8 transition-all duration-300 ease-in-out ${
+              isDesktop ? "opacity-100 scale-100" : "opacity-0 scale-90"
+            }`}
+          >
+            <li className="hover:text-customText transition-colors">
+              <a href="#about">About</a>
+            </li>
+            <li className="hover:text-customText transition-colors">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="hover:text-customText transition-colors">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="h-4 w-[1px] bg-customText/40"></li>
+            <li
+              className="hover:text-customText transition-colors cursor-pointer"
+              onClick={() => navigate("/hobby")}
+            >
+              Hobby
+            </li>
+            <li
+              className="hover:text-customText transition-colors cursor-pointer"
+              onClick={() => navigate("/blog")}
+            >
+              Blog
+            </li>
+          </ul>
         </div>
 
         <AnimatePresence>
           {isOpen && (
-            <>
-              <motion.div
-                className="fixed inset-0 z-40"
-                variants={backdropVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                transition={{ duration: 0.3 }}
-              />
+            <motion.div
+              className="fixed inset-0 z-40"
+              variants={backdropVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              transition={{ duration: 0.3 }}
+            >
               <motion.ul
-                className="md:hidden mt-4 text-center space-y-4 font-semibold z-50"
+                className="md:hidden mt-4 text-center space-y-4 font-semibold z-50 bg-customBackground p-6 rounded-lg shadow-lg mx-4 ring-1 ring-customSoft"
                 variants={navVariants}
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.3, staggerChildren: 0.05 }}
               >
-                <li className="hover:text-customText transition-colors">
+                <motion.li
+                  className="hover:text-customText transition-colors"
+                  variants={navVariants}
+                >
                   <a href="#about">About</a>
-                </li>
-                <li className="hover:text-customText transition-colors">
+                </motion.li>
+                <motion.li
+                  className="hover:text-customText transition-colors"
+                  variants={navVariants}
+                >
                   <a href="#skills">Skills</a>
-                </li>
-                <li className="hover:text-customText transition-colors">
+                </motion.li>
+                <motion.li
+                  className="hover:text-customText transition-colors"
+                  variants={navVariants}
+                >
                   <a href="#projects">Projects</a>
-                </li>
-                <li className="flex justify-center items-center">
+                </motion.li>
+                <motion.li
+                  className="flex justify-center items-center"
+                  variants={navVariants}
+                >
                   <hr className="w-8 border-t-1 border-customText/40 my-0" />
-                </li>
-                <li
+                </motion.li>
+                <motion.li
                   className="hover:text-customText transition-colors cursor-pointer"
                   onClick={() => navigate("/hobby")}
+                  variants={navVariants}
                 >
                   Hobby
-                </li>
-                <li
+                </motion.li>
+                <motion.li
                   className="hover:text-customText transition-colors cursor-pointer"
                   onClick={() => navigate("/blog")}
+                  variants={navVariants}
                 >
                   Blog
-                </li>
+                </motion.li>
               </motion.ul>
-            </>
+            </motion.div>
           )}
         </AnimatePresence>
       </nav>
