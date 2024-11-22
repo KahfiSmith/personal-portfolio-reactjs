@@ -1,18 +1,28 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { HTMLAttributes } from "react";
+import {
+  LazyLoadImage,
+  LazyLoadImageProps,
+} from "react-lazy-load-image-component";
 
-interface ImageProps {
-  src: string;
-  alt: string;
-  className?: string;
-}
+type ImageProps = HTMLAttributes<HTMLImageElement> &
+  LazyLoadImageProps & {
+    src: string;
+    alt: string;
+    className?: string;
+  };
 
-export default function ImageLazy({ src, alt, className }: ImageProps) {
+export default function ImageLazy({
+  src,
+  alt,
+  className,
+  ...props
+}: ImageProps) {
   return (
     <LazyLoadImage
       src={src}
       alt={alt}
-      effect="blur"
-      className={className}
+      className={`transition-opacity duration-500 ease-in-out ${className}`}
+      {...props}
     />
   );
 }

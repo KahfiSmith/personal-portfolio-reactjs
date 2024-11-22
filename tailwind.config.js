@@ -9,7 +9,6 @@ const config = {
     extend: {
       fontFamily: {
         ...defaultTheme.fontFamily, 
-        geist: ["Geist", "sans-serif", "system-ui"],
         lora: ["Lora", "sans-serif"],
       },
       colors: {

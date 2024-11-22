@@ -7,7 +7,7 @@ export default function PopUpHobby({ title, imgSrc }: ProjectsItemProps) {
         <img
           src={imgSrc}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 ease-in-out"
+          className="w-full h-full object-cover transition-transform duration-500 ease-in-out rounded-lg"
         />
       </div>
     </div>
