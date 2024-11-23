@@ -37,16 +37,6 @@ export const dataSkills: SkillItemProps[] = [
     desc: "Library",
   },
   {
-    imgSrc: "/images/redux.svg",
-    label: "Redux",
-    desc: "State Management",
-  },
-  {
-    imgSrc: "/images/nodejs-icon-alt.svg",
-    label: "NodeJS",
-    desc: "Web Server",
-  },
-  {
     imgSrc: "/images/express.svg",
     label: "ExpressJS",
     desc: "Node Framework",
@@ -75,11 +65,6 @@ export const dataSkills: SkillItemProps[] = [
     imgSrc: "/images/git-icon.svg",
     label: "Git",
     desc: "Version Control",
-  },
-  {
-    imgSrc: "/images/docker-icon.svg",
-    label: "Docker",
-    desc: "Containerization",
   },
   {
     imgSrc: "/images/figma.svg",
