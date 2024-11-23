@@ -1,3 +1,4 @@
+import ImageLazy from "@/components/ImageLazy";
 import { ProjectsItemProps } from "@/types";
 import { ArrowUpRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -25,7 +26,7 @@ export default function ProjectCardDesign({
       className="relative rounded-lg mx-auto shadow-md overflow-hidden group cursor-pointer max-h-[250px]"
       onClick={handleClick}
     >
-      <img
+      <ImageLazy
         src={imgSrc}
         alt={title}
         className="w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:rotate-6"

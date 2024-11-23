@@ -34,14 +34,14 @@ export const dataProjects: ProjectsItemProps[] = [
     route: "/relive",
   },
   {
-    imgSrc: "/images/medmart.svg",
+    imgSrc: "/images/medmart.png",
     title: "Medmart",
     desc: "Actually, Medmart is one of the design competitions that I participated in via the Instagram platform.",
     type: "design",
     route: "/medmart",
   },
   {
-    imgSrc: "/images/eduverse.svg",
+    imgSrc: "/images/eduverse.png",
     title: "EduVerse",
     desc: "EduVerse is a learning application specially designed for high school students.",
     type: "design",
