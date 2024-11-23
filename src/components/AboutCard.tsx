@@ -89,8 +89,6 @@ export function AboutCard() {
 
                   <motion.a
                     layoutId={`button-${active.title}-${id}`}
-                    href={active.ctaLink}
-                    target="_blank"
                     className="px-4 py-2 text-sm rounded-full font-semibold bg-customVerySoft text-customText"
                   >
                     {active.ctaText}
@@ -190,7 +188,7 @@ const cards = [
     title: "Mohamad Al-Kahfi",
     src: "/images/kahfi.svg",
     ctaText: "About me",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "",
     content: () => {
       return (
         <div className="flex flex-col text-sm md:text-base leading-6 md:leading-7 text-justify mb-4">
