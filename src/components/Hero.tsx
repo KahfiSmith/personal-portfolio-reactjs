@@ -11,7 +11,7 @@ export default function Hero() {
       <AuroraBackground>
         <Navbar />
         <section className="flex flex-col items-center justify-center min-h-screen relative">
-          <h1 className="text-[40px] md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-center font-lora tracking-wide md:mb-5 mb-3 text-customText/60">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-center font-lora tracking-wide md:mb-5 mb-3 text-customText/60">
             Mohamad Al-Kahfi
           </h1>
           <div className="flex flex-col text-sm md:text-base text-customText text-center tracking-wide px-8 md:mb-6 mb-4 font-lora">
