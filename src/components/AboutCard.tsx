@@ -1,4 +1,3 @@
-
 import { useOutsideClick } from "@/hooks";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useId, useRef, useState } from "react";
@@ -86,6 +85,12 @@ export function AboutCard() {
                       {active.description}
                     </motion.p>
                   </div>
+                  <motion.a
+                    layoutId={`button-${active.title}-${id}`}
+                    className="px-4 py-2 text-xs md:text-sm rounded-full font-semibold bg-customVerySoft text-customText whitespace-nowrap"
+                  >
+                    {active.ctaText}
+                  </motion.a>
                 </div>
                 <div className="pt-4 relative px-4">
                   <motion.div
@@ -204,7 +209,8 @@ const cards = [
             using with as well as several backend languages such as PHP,
             Laravel, and Express.js. In the future, I plan to learn better
             understand developing more complete and dynamic web applications. By
-            the way, I also like playing games, reading manga, and watching anime.
+            the way, I also like playing games, reading manga, and watching
+            anime.
           </span>
         </div>
       );
