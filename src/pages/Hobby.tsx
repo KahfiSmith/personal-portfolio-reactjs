@@ -76,7 +76,6 @@ export default function Hobby() {
                   imgSrc={item.imgSrc}
                   title={item.title}
                   desc={item.desc}
-                  tags={item.tags}
                 />
               </div>
             ))}
