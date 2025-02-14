@@ -23,7 +23,7 @@ export default function ProjectCardDesign({
 
   return (
     <div
-      className="relative rounded-lg mx-auto shadow-md overflow-hidden group cursor-pointer max-h-[250px]"
+      className="relative rounded-lg mx-auto shadow-md overflow-hidden group cursor-pointer max-h-[400px]"
       onClick={handleClick}
     >
       <ImageLazy
