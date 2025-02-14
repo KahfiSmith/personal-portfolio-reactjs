@@ -182,7 +182,7 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Frontend Web Developer and UI/UX Designer",
+    description: "Frontend Web Developer",
     title: "Mohamad Al-Kahfi",
     src: "/images/kahfi.svg",
     ctaText: "About me",
@@ -195,13 +195,8 @@ const cards = [
             <span className="font-medium text-customTextV3">Kahfi</span>. I am
             An information engineering student with experience as a{" "}
             <span className="font-medium text-customTextV3">
-              Frontend Web Developer
-            </span>{" "}
-            and{" "}
-            <span className="font-medium text-customTextV3">
-              UI/UX Designer
+            Frontend Web Developer.
             </span>
-            .
           </span>
           <span>
             Currently, I have mastered HTML, CSS, JavaScript, Bootstrap, and

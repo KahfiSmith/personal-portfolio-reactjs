@@ -13,7 +13,7 @@ export default function ReLive() {
       <div className="w-full flex justify-center min-h-screen items-start pt-10">
         <div className="w-full md:flex md:flex-col items-start justify-start px-4 max-w-5xl">
           <BackButton
-            title="ReLive - Online Consultation Platform"
+            title="ReLive - Online mental health consultation platform"
             subtitle="June 28, 2023"
             titleColor="text-customTextV3"
           />

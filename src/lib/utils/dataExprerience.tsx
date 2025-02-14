@@ -24,7 +24,7 @@ export const dataExperience: ExperienceItemProps[] = [
     ),
   },
   {
-    title: "Web Development & UI/UX Design",
+    title: "Web Development",
     date: "February 2024 - June 2024",
     company: "Infinite Learning Indonesia - Independent Study",
     content: (

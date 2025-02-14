@@ -28,7 +28,7 @@ export const dataProjects: ProjectsItemProps[] = [
   {
     imgSrc: "/images/relive.png",
     title: "ReLive",
-    desc: "ReLive is an online consultation platform designed to provide easy and fast access to users who need psychological help.",
+    desc: "ReLive is an online mental health consultation platform, designed to provide easy and fast access to users who need psychological help.",
     tags: ["React.js", "Express.js"],
     type: "website",
     route: "/relive",

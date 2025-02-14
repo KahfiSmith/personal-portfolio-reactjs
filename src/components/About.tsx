@@ -11,7 +11,7 @@ export default function About() {
       <div className="w-full md:flex md:flex-col items-center px-4 max-w-5xl mb-10">
         <div className="flex flex-col justify-start text-xl md:text-2xl lg:text-3xl font-medium mb-6">
           <span className="md:mb-5 mb-1 text-customText">
-            I'm a Frontend Web Developer and UI/UX Designer
+            I'm a Frontend Web Developer
           </span>
         </div>
         <AboutCard/>
