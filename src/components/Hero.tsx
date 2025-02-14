@@ -18,13 +18,8 @@ export default function Hero() {
             <span className="mb-2 md:mb-1">
               An information engineering student with experience as a{" "}
               <span className="font-bold text-customTextV2/80">
-                Frontend Web Developer
-              </span>{" "}
-              and{" "}
-              <span className="font-bold text-customTextV2/80">
-                UI/UX Designer
+                Frontend Web Developer.
               </span>
-              .
             </span>
             <span>
               Skilled in creating and optimizing visual elements and intuitive
