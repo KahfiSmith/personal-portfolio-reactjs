@@ -1,16 +1,16 @@
 import { SkillItemProps } from "@/types";
 
 export const dataSkills: SkillItemProps[] = [
-  {
-    imgSrc: "/images/html-5.svg",
-    label: "HTML",
-    desc: "Structure",
-  },
-  {
-    imgSrc: "/images/css-3.svg",
-    label: "CSS",
-    desc: "User Interface",
-  },
+  // {
+  //   imgSrc: "/images/html-5.svg",
+  //   label: "HTML",
+  //   desc: "Structure",
+  // },
+  // {
+  //   imgSrc: "/images/css-3.svg",
+  //   label: "CSS",
+  //   desc: "User Interface",
+  // },
   {
     imgSrc: "/images/javascript.svg",
     label: "JavaScript",
@@ -41,11 +41,11 @@ export const dataSkills: SkillItemProps[] = [
     label: "ExpressJS",
     desc: "Node Framework",
   },
-  {
-    imgSrc: "/images/php.svg",
-    label: "PHP",
-    desc: "Server-Side Scripting",
-  },
+  // {
+  //   imgSrc: "/images/php.svg",
+  //   label: "PHP",
+  //   desc: "Server-Side Scripting",
+  // },
   {
     imgSrc: "/images/laravel.svg",
     label: "Laravel",
@@ -56,16 +56,16 @@ export const dataSkills: SkillItemProps[] = [
     label: "MySQL",
     desc: "Database",
   },
-  {
-    imgSrc: "/images/firebase.svg",
-    label: "Firebase",
-    desc: "Backend-as-a-Service",
-  },
-  {
-    imgSrc: "/images/git-icon.svg",
-    label: "Git",
-    desc: "Version Control",
-  },
+  // {
+  //   imgSrc: "/images/firebase.svg",
+  //   label: "Firebase",
+  //   desc: "Backend-as-a-Service",
+  // },
+  // {
+  //   imgSrc: "/images/git-icon.svg",
+  //   label: "Git",
+  //   desc: "Version Control",
+  // },
   {
     imgSrc: "/images/figma.svg",
     label: "Figma",
