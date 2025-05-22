@@ -1,4 +1,3 @@
-import ImageLazy from "@/components/ImageLazy";
 import { ProjectsItemProps } from "@/types";
 import { ArrowUpRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -29,7 +28,7 @@ export default function ProjectsCardWebsite({
       onClick={handleClick}
     >
       <figure className="overflow-hidden rounded-t-xl">
-        <ImageLazy
+        <img
           src={imgSrc}
           alt={title}
           className="rounded-t-xl transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:rotate-2 w-full aspect-[16/9] object-cover"
