@@ -34,6 +34,14 @@ export const dataProjects: ProjectsItemProps[] = [
     route: "/relive",
   },
   {
+    imgSrc: "/images/ternakq-beranda.png",
+    title: "TernakQ",
+    desc: "TernakQ is a poultry farm management platform designed to help farmers manage coops, chickens, feed, financial reports, educational articles, and join discussions through a community forum.",
+    tags: ["Laravel Livewire", "Tailwind CSS", "Javascript"],
+    type: "website",
+    route: "/ternakq",
+  },
+  {
     imgSrc: "/images/medmart.png",
     title: "Medmart",
     desc: "Actually, Medmart is one of the design competitions that I participated in via the Instagram platform.",
