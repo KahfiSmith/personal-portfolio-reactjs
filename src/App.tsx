@@ -8,6 +8,7 @@ import DepoMayarJaya from "@/pages/Projects/DepoMayarJaya";
 import ReLive from "@/pages/Projects/ReLive";
 import Medmart from "@/pages/Projects/Medmart";
 import EduVerse from "@/pages/Projects/EduVerse.";
+import TernakQ from "./pages/Projects/Ternakq";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/epkk" element={<EPkk />} />
         <Route path="/depomayarjaya" element={<DepoMayarJaya />} />
         <Route path="/relive" element={<ReLive />} />
+        <Route path="/ternakq" element={< TernakQ/>} />
         <Route path="/medmart" element={<Medmart />} />
         <Route path="/eduverse" element={<EduVerse />} />
         <Route path="/hobby" element={<Hobby />} />
