@@ -13,7 +13,6 @@ export default function NotFound() {
       {" "}
       <div className="relative flex flex-col items-center justify-center h-screen bg-slate-900 overflow-hidden">
         <div className="custom-gradient-background"></div>
-
         <h1 className="text-[100px] font-bold text-slate-200 -tracking-tighter relative z-10">
           404
         </h1>
