@@ -13,7 +13,7 @@ export default function Projects() {
     >
       <div className="w-full md:flex md:flex-col items-center justify-between px-4 max-w-5xl">
         <div className="flex flex-col justify-start font-medium mb-6">
-          <h2 className="md:mb-14 mb-6 text-customText font-semibold text-center text-xl md:text-2xl lg:text-3xl">
+          <h2 className="md:mb-14 mb-6 text-customText font-bold text-center text-xl md:text-2xl lg:text-3xl font-lora">
             Showcase of Creativity
           </h2>
           <div className="flex flex-col mb-12">
