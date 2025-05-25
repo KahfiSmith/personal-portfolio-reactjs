@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NotFound from "@/pages/NotFound";
+import NotFound from "@/pages/Blog";
 import Home from "@/pages";
 import Hobby from "@/pages/Hobby";
 import ReviewNime from "@/pages/Projects/ReviewNime";
@@ -9,6 +9,7 @@ import ReLive from "@/pages/Projects/ReLive";
 import Medmart from "@/pages/Projects/Medmart";
 import EduVerse from "@/pages/Projects/EduVerse.";
 import TernakQ from "./pages/Projects/Ternakq";
+import Blog from "@/pages/Blog";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/medmart" element={<Medmart />} />
         <Route path="/eduverse" element={<EduVerse />} />
         <Route path="/hobby" element={<Hobby />} />
+        <Route path="/blog" element={<Blog />} />
 
         {/* Error Page */}
         <Route path="*" element={<NotFound />} />
