@@ -3,7 +3,7 @@ import ImageLazy from "@/components/ImageLazy";
 import Motion from "@/components/Motion";
 import { useScrollToTop, useTitle } from "@/hooks";
 
-export default function TernakQ() {
+export default function Ternakq() {
   useTitle("TernakQ");
   useScrollToTop();
 
