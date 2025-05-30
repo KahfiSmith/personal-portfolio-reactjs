@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NotFound from "@/pages/Blog";
 import Home from "@/pages";
 import Hobby from "@/pages/Hobby";
 import ReviewNime from "@/pages/Projects/ReviewNime";
@@ -10,6 +9,7 @@ import Medmart from "@/pages/Projects/Medmart";
 import EduVerse from "@/pages/Projects/EduVerse.";
 import TernakQ from "./pages/Projects/Ternakq";
 import Blog from "@/pages/Blog";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
