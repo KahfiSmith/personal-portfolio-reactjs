@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Ignore public/images directory
-public/images/
+# public/images/
