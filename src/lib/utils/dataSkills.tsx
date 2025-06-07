@@ -41,11 +41,11 @@ export const dataSkills: SkillItemProps[] = [
     label: "MySQL",
     desc: "Database",
   },
-  // {
-  //   imgSrc: "/images/git-icon.svg",
-  //   label: "Git",
-  //   desc: "Version Control",
-  // },
+  {
+    imgSrc: "/images/git-icon.svg",
+    label: "Git",
+    desc: "Version Control",
+  },
   {
     imgSrc: "/images/figma.svg",
     label: "Figma",

@@ -89,7 +89,7 @@ export default function Skills() {
                 key={index}
                 variants={cardVariants}
                 whileHover={{
-                  scale: 1.05,
+                  scale: 1,
                   y: -5,
                   transition: { duration: 0.2 }
                 }}
