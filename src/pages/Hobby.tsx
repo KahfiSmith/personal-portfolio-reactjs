@@ -10,6 +10,54 @@ import { useEffect, useRef, useState } from "react";
 
 const designProject = dataHobby.filter((item) => item.type === "design");
 
+// Animation variants for page loading
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
+const gridVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.4,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 export default function Hobby() {
   useTitle("Hobby");
   useScrollToTop();
@@ -51,35 +99,51 @@ export default function Hobby() {
 
   return (
     <Motion>
-      <div className="w-full flex justify-center min-h-screen items-start pt-10">
+      <motion.div 
+        className="w-full flex justify-center min-h-screen items-start pt-10"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="w-full md:flex md:flex-col items-start justify-start px-4 max-w-5xl">
-          <BackButton
-            title="Hobby"
-            subtitle="Apart from playing games and watching anime, I also enjoy other hobbies such as graphic design and reading manga. This activity not only hones creativity but also provides inspiration and new insights that I can apply in my work as a developer."
-          />
+          <motion.div variants={itemVariants}>
+            <BackButton
+              title="Hobby"
+              subtitle="Apart from playing games and watching anime, I also enjoy other hobbies such as graphic design and reading manga. This activity not only hones creativity but also provides inspiration and new insights that I can apply in my work as a developer."
+            />
+          </motion.div>
 
-          <div className="mb-6">
+          <motion.div className="mb-6" variants={itemVariants}>
             <h3 className="font-medium text-xl mb-1">Graphic Design</h3>
             <span>
               I enjoy exploring creative ideas through graphic design.
             </span>
-          </div>
+          </motion.div>
 
-          <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
+          <motion.div 
+            className="grid gap-5 grid-cols-1 md:grid-cols-2"
+            variants={gridVariants}
+          >
             {designProject.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={cardVariants}
                 onClick={() => handleOpenPopup(item)}
                 className="cursor-pointer"
+                whileHover={{ 
+                  scale: 1.02, 
+                  transition: { duration: 0.2 } 
+                }}
+                whileTap={{ scale: 0.98 }}
               >
                 <ProjectCardDesign
                   imgSrc={item.imgSrc}
                   title={item.title}
                   desc={item.desc}
                 />
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
 
         <AnimatePresence>
@@ -111,7 +175,7 @@ export default function Hobby() {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </motion.div>
     </Motion>
   );
 }
