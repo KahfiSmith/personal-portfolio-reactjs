@@ -72,14 +72,11 @@ export default function Projects() {
           >
             Showcase of Creativity
           </motion.h2>
-          
           <motion.div
             className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12 rounded-full"
             variants={dividerVariants}
           />
-          
           <ProjectsWebDevelopment />
-          
           <ProjectsCreativeDesign />
         </div>
       </motion.div>

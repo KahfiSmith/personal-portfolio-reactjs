@@ -49,7 +49,7 @@ const cardVariants = {
     },
   },
   hover: {
-    scale: 1.05,
+    scale: 1.03,
     y: -5,
     transition: {
       duration: 0.2,

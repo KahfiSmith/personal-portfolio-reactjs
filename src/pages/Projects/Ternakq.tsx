@@ -12,7 +12,7 @@ export default function Ternakq() {
       <div className="w-full flex justify-center min-h-screen items-start pt-10">
         <div className="w-full md:flex md:flex-col items-start justify-start px-4 max-w-5xl">
           <BackButton
-            title="TernakQ - A Animal Husbandary Education"
+            title="TernakQ - A animal husbandary education"
             subtitle="May 22, 2025"
             titleColor="text-customTextV3"
           />
