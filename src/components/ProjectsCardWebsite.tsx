@@ -43,7 +43,7 @@ export default function ProjectsCardWebsite({
               {tags?.map((tag, index) => (
                 <span
                   key={index}
-                  className="flex items-center py-[2px] px-3 bg-customSoft/50 rounded-full text-customTextV3 text-sm md:text-sm"
+                  className="flex items-center py-[2px] px-2 bg-customSoft/50 rounded-full text-customTextV3 text-xs md:text-sm whitespace-nowrap mb-1 mr-1"
                 >
                   {tag}
                 </span>
