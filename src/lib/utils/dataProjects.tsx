@@ -42,6 +42,14 @@ export const dataProjects: ProjectsItemProps[] = [
     route: "/ternakq",
   },
   {
+    imgSrc: "/images/quowrld-page.png",
+    title: "Quowr/d",
+    desc: "Quowrld is a quote-sharing platform designed to 'capture and immortalize meaningful words' from anyone.",
+    tags: ["Next.js", "Supabase", "Tailwind CSS"],
+    type: "website",
+    route: "/quowrld",
+  },
+  {
     imgSrc: "/images/medmart.png",
     title: "Medmart",
     desc: "Actually, Medmart is one of the design competitions that I participated in via the Instagram platform.",
