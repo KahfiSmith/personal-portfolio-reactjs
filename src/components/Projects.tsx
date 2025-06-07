@@ -1,9 +1,56 @@
-import ProjectCardDesign from "@/components/ProjectCardDesign";
-import ProjectsCardWebsite from "@/components/ProjectsCardWebsite";
-import { dataProjects } from "@/lib/utils/dataProjects";
+import ProjectsWebDevelopment from "@/components/ProjectsWebDevelopment";
+import ProjectsCreativeDesign from "@/components/ProjectsCreativeDesign";
+import { motion } from "framer-motion";
 
-const websiteProject = dataProjects.filter((item) => item.type === "website");
-const designProject = dataProjects.filter((item) => item.type === "design");
+// Animation variants for main container and title
+const pageVariants = {
+  hidden: { 
+    opacity: 0,
+    scale: 0.95,
+    y: 60,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const titleVariants = {
+  hidden: { 
+    opacity: 0, 
+    y: -30,
+    scale: 0.9,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.7,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
+  },
+};
+
+const dividerVariants = {
+  hidden: { 
+    scaleX: 0,
+    opacity: 0,
+  },
+  visible: {
+    scaleX: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
+  },
+};
 
 export default function Projects() {
   return (
@@ -11,55 +58,31 @@ export default function Projects() {
       className="w-full flex justify-center pt-20 min-h-screen mb-6"
       id="projects"
     >
-      <div className="w-full md:flex md:flex-col items-center justify-between px-4 max-w-5xl">
+      <motion.div
+        className="w-full md:flex md:flex-col items-center justify-between px-4 max-w-5xl"
+        variants={pageVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="flex flex-col justify-start font-medium mb-6">
-          <h2 className="md:mb-14 mb-6 text-customText font-bold text-center text-xl md:text-2xl lg:text-3xl font-lora">
+          <motion.h2
+            className="md:mb-14 mb-6 text-customText font-bold text-center text-xl md:text-2xl lg:text-3xl font-lora"
+            variants={titleVariants}
+          >
             Showcase of Creativity
-          </h2>
-          <div className="flex flex-col mb-12">
-            <h3 className="mb-1 text-customText font-semibold text-lg md:text-xl lg:text-2xl">
-              Web Development Portfolio
-            </h3>
-            <span className="mb-6 text-customText font-normal text-base lg:text-lg">
-              Modern and responsive web with a focus on intuitive UI/UX design
-              and efficient backend solutions.
-            </span>
-            <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
-              {websiteProject.map((item, index) => (
-                <ProjectsCardWebsite
-                  key={index}
-                  imgSrc={item.imgSrc}
-                  title={item.title}
-                  desc={item.desc}
-                  tags={item.tags}
-                  route={item.route}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <h3 className="mb-1 text-customText font-semibold text-lg md:text-xl lg:text-2xl">
-              Creative Design Portfolio
-            </h3>
-            <span className="mb-6 text-customText font-normal text-base lg:text-lg">
-              Several innovative designs, ranging from mobile and website UI/UX,
-              to graphic design.
-            </span>
-            <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
-              {designProject.map((item, index) => (
-                <ProjectCardDesign
-                  key={index}
-                  imgSrc={item.imgSrc}
-                  title={item.title}
-                  desc={item.desc}
-                  tags={item.tags}
-                  route={item.route}
-                />
-              ))}
-            </div>
-          </div>
+          </motion.h2>
+          
+          <motion.div
+            className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12 rounded-full"
+            variants={dividerVariants}
+          />
+          
+          <ProjectsWebDevelopment />
+          
+          <ProjectsCreativeDesign />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
