@@ -100,7 +100,7 @@ export default function Hobby() {
   return (
     <Motion>
       <motion.div 
-        className="w-full flex justify-center min-h-screen items-start pt-10"
+        className="w-full flex justify-center min-h-screen items-start pt-10 mb-20"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
