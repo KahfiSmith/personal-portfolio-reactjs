@@ -147,25 +147,23 @@ export default function Hobby() {
         </div>
 
         <AnimatePresence>
-          {isPopupOpen && selectedItem && (
-            <motion.div
-              className="fixed inset-0 flex justify-center items-center z-50 bg-black/50"
+          {isPopupOpen && selectedItem && (            <motion.div
+              className="fixed inset-0 flex justify-center items-center z-50 bg-black/50 p-4 overflow-y-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={handleClosePopup}
-            >
-              <motion.div
+            ><motion.div
                 ref={popupRef}
-                className="relative shadow-lg max-w-[600px] overflow-hidden rounded-lg"
+                className="relative shadow-lg max-w-[90vw] md:max-w-[600px] bg-white dark:bg-zinc-800 overflow-hidden rounded-lg m-4"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="px-4">
+                <div className="p-4">
                   <PopUpHobby
                     title={selectedItem.title}
                     imgSrc={selectedItem.imgSrc}
