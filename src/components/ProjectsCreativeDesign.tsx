@@ -84,9 +84,8 @@ export default function ProjectsCreativeDesign() {
       >
         Several innovative designs, ranging from mobile and website UI/UX,
         to graphic design.
-      </motion.span>
-      <motion.div
-        className="grid gap-5 grid-cols-1 md:grid-cols-2"
+      </motion.span>      <motion.div
+        className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full"
         variants={cardContainerVariants}
         initial="hidden"
         whileInView="visible"
@@ -97,6 +96,7 @@ export default function ProjectsCreativeDesign() {
             key={index} 
             variants={cardVariants}
             whileHover="hover"
+            className="w-full h-full"
           >
             <ProjectCardDesign
               imgSrc={item.imgSrc}
