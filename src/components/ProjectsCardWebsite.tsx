@@ -39,11 +39,11 @@ export default function ProjectsCardWebsite({
           </h3>
           <p className="mb-12 leading-7">{truncatedDesc}</p>
           <div className="flex justify-between items-center">
-            <div className="flex space-x-3">
+            <div className="flex flex-wrap gap-2 md:gap-3">
               {tags?.map((tag, index) => (
                 <span
                   key={index}
-                  className="flex items-center py-[2px] px-2 bg-customSoft/50 rounded-full text-customTextV3 text-xs md:text-sm whitespace-nowrap mb-1 mr-1"
+                  className="flex items-center py-[2px] px-2 bg-customSoft/50 rounded-full text-customTextV3 text-xs md:text-sm whitespace-nowrap"
                 >
                   {tag}
                 </span>
