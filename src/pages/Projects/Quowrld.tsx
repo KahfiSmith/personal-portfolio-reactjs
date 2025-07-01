@@ -115,7 +115,8 @@ export default function Quowrld() {
                     className="rounded-lg"
                   />
                 </div>
-                <li className="font-medium text-lg">
+              </li>
+              <li className="font-medium text-lg">
                   Share Quotes
                   <span className="block font-normal text-sm md:text-[14px] leading-6 md:leading-7 ml-6 mb-4">
                     Share Quotes is engineered to maximize your quote’s reach
@@ -165,7 +166,6 @@ export default function Quowrld() {
                     />
                   </div>
                 </li>
-              </li>
             </ul>
           </div>
         </div>
