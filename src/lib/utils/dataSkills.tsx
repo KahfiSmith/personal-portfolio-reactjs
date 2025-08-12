@@ -2,57 +2,57 @@ import { SkillItemProps } from "@/types";
 
 export const dataSkills: SkillItemProps[] = [
   {
-    imgSrc: "/images/javascript.svg",
+    imgSrc: "/icons/javascript.svg",
     label: "JavaScript",
     desc: "Interaction",
   },
   {
-    imgSrc: "/images/typescript-icon.svg",
+    imgSrc: "/icons/typescript-icon.svg",
     label: "Typescript",
     desc: "Superset of JavaScript",
   },
   {
-    imgSrc: "/images/bootstrap.svg",
+    imgSrc: "/icons/bootstrap.svg",
     label: "Bootstrap",
     desc: "User Interface",
   },
   {
-    imgSrc: "/images/tailwindcss-icon.svg",
+    imgSrc: "/icons/tailwindcss-icon.svg",
     label: "TailwindCSS",
     desc: "User Interface",
   },
   {
-    imgSrc: "/images/react.svg",
+    imgSrc: "/icons/react.svg",
     label: "ReactJS",
     desc: "Library",
   },
   {
-    imgSrc: "/images/express.svg",
+    imgSrc: "/icons/express.svg",
     label: "ExpressJS",
     desc: "Node Framework",
   },
   {
-    imgSrc: "/images/laravel.svg",
+    imgSrc: "/icons/laravel.svg",
     label: "Laravel",
     desc: "PHP Framework",
   },
   {
-    imgSrc: "/images/mysql-icon.svg",
+    imgSrc: "/icons/mysql-icon.svg",
     label: "MySQL",
     desc: "Database",
   },
   {
-    imgSrc: "/images/git-icon.svg",
+    imgSrc: "/icons/git-icon.svg",
     label: "Git",
     desc: "Version Control",
   },
   {
-    imgSrc: "/images/figma.svg",
+    imgSrc: "/icons/figma.svg",
     label: "Figma",
     desc: "Design tool",
   },
   {
-    imgSrc: "/images/adobe-photoshop.svg",
+    imgSrc: "/icons/adobe-photoshop.svg",
     label: "Photoshop",
     desc: "Design tool",
   },

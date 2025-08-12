@@ -50,6 +50,22 @@ export const dataProjects: ProjectsItemProps[] = [
     route: "/quowrld",
   },
   {
+    imgSrc: "/images/kpopulls.png",
+    title: "Kpop Pulls",
+    desc: "Gacha for my bias, eating instant noodles for a week is not a problem.",
+    tags: ["Next.js", "Tailwind CSS"],
+    type: "website",
+    route: "/kpopulls",
+  },
+  {
+    imgSrc: "/images/coderoaster.png",
+    title: "Code Roaster",
+    desc: "Code issues are my way of expressing that your coding is very poor.",
+    tags: ["Next.js", "Tailwind CSS", "API GPT"],
+    type: "website",
+    route: "/coderoaster",
+  },
+  {
     imgSrc: "/images/medmart.png",
     title: "Medmart",
     desc: "Actually, Medmart is one of the design competitions that I participated in via the Instagram platform.",
