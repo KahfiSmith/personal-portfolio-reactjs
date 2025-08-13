@@ -61,7 +61,7 @@ export const dataProjects: ProjectsItemProps[] = [
     imgSrc: "/images/coderoaster.png",
     title: "Code Roaster",
     desc: "Code issues are my way of expressing that your coding is very poor.",
-    tags: ["React.js", "Tailwind CSS", "Open AI"],
+    tags: ["React.js", "Tailwind CSS", "API OpenAI"],
     type: "website",
     route: "/coderoaster",
   },
