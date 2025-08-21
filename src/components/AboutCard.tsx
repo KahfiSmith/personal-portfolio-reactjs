@@ -184,7 +184,7 @@ const cards = [
   {
     description: "Frontend Web Developer",
     title: "Mohamad Al-Kahfi",
-    src: "/images/kahfi.svg",
+    src: "/images/kahfi.png",
     ctaText: "About me",
     ctaLink: "",
     content: () => {
