@@ -201,7 +201,7 @@ const cards = [
           <span>
             Currently, I have mastered HTML, CSS, JavaScript, Bootstrap, and
             Tailwind. I also have experience in developing web applications
-            using with as well as several backend languages such as PHP,
+            using React and Next.js as well as several backend languages such as PHP,
             Laravel, and Express.js. In the future, I plan to learn better
             understand developing more complete and dynamic web applications. By
             the way, I also like playing games, reading manga, and watching
