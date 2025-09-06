@@ -32,7 +32,7 @@ export const dataSkills: SkillItemProps[] = [
     desc: "Node Framework",
   },
   {
-    imgSrc: "/icons/next.svg",
+    imgSrc: "/icons/nextjs.svg",
     label: "NextJS",
     desc: "React Framework",
   },
