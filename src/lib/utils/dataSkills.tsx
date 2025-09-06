@@ -32,6 +32,11 @@ export const dataSkills: SkillItemProps[] = [
     desc: "Node Framework",
   },
   {
+    imgSrc: "/icons/next.svg",
+    label: "NextJS",
+    desc: "React Framework",
+  },
+  {
     imgSrc: "/icons/laravel.svg",
     label: "Laravel",
     desc: "PHP Framework",
@@ -39,6 +44,11 @@ export const dataSkills: SkillItemProps[] = [
   {
     imgSrc: "/icons/mysql-icon.svg",
     label: "MySQL",
+    desc: "Database",
+  },
+  {
+    imgSrc: "/icons/postgresql.svg",
+    label: "PostgreSQL",
     desc: "Database",
   },
   {
